@@ -5,12 +5,12 @@ Summary:	HTML::Formatter - Base class for HTML formatters
 Summary(pl):	HTML::Formatter - bazowa klasa dla klas formatuj±cych HTML
 Name:		perl-HTML-Format
 Version:	2.03
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-Font-AFM
 # do not change to BuildRequires
 Requires:	perl-HTML-Tree >= 3.15
@@ -37,7 +37,8 @@ przyjmuje HTML::Element jako parametr.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -51,5 +52,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitelib}/HTML/*.pm
+%{perl_vendorlib}/HTML/*.pm
 %{_mandir}/man3/*
