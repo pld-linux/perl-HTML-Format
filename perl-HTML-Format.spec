@@ -14,7 +14,7 @@ BuildRequires:	perl >= 5.005_03-14
 Requires:	%{perl_sitearch}
 # do not change to BuildRequires
 Requires:	perl-HTML-Tree >= 0.62
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 HTML-Format perl module
