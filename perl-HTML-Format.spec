@@ -1,7 +1,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	HTML
 %define	pnam	Format
-Summary:	HTML::Formatter - Base class for HTML formatters
+Summary:	HTML::Formatter - base class for HTML formatters
 Summary(pl):	HTML::Formatter - bazowa klasa dla klas formatuj±cych HTML
 Name:		perl-HTML-Format
 Version:	2.03
