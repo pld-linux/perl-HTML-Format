@@ -3,7 +3,7 @@ Summary:	HTML-Format perl module
 Summary(pl):	Modu³ perla HTML-Format
 Name:		perl-HTML-Format
 Version:	1.23
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -15,6 +15,7 @@ BuildRequires:	perl-Font-AFM
 BuildRequires:	perl >= 5.6
 # do not change to BuildRequires
 Requires:	perl-HTML-Tree >= 0.62
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
