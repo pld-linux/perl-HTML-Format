@@ -39,7 +39,7 @@ przyjmuje HTML::Element jako parametr.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
