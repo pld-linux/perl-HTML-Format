@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	HTML
 %define	pnam	Format
-Summary:	HTML-Format perl module
-Summary(pl):	Modu³ perla HTML-Format
+Summary:	HTML::Format perl module
+Summary(pl):	Modu³ perla HTML::Format
 Name:		perl-HTML-Format
 Version:	1.23
 Release:	6
@@ -19,10 +19,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-HTML-Format perl module.
+HTML::Format perl module.
 
 %description -l pl
-Modu³ perla HTML-Format.
+Modu³ perla HTML::Format.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
