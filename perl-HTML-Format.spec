@@ -3,7 +3,7 @@ Summary:	HTML-Format perl module
 Summary(pl):	Modu³ perla HTML-Format
 Name:		perl-HTML-Format
 Version:	1.23
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
