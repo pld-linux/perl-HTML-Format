@@ -14,8 +14,6 @@ BuildRequires:	perl >= 5.005_03-14
 BuildRequires:	perl-Font-AFM
 BuildRequires:	perl-HTML-Tree >= 0.62
 BuildRequires:	perl >= 5.6
-%requires_eq	perl
-Requires:	%{perl_sitearch}
 # do not change to BuildRequires
 Requires:	perl-HTML-Tree >= 0.62
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
