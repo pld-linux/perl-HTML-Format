@@ -5,7 +5,7 @@ Summary:	HTML::Formatter - Base class for HTML formatters
 Summary(pl):	HTML::Formatter - bazowa klasa dla klas formatuj±cych HTML
 Name:		perl-HTML-Format
 Version:	2.03
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
