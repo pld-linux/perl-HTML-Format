@@ -12,7 +12,6 @@ Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/HTML/HTML-Format-%{versio
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 BuildRequires:	perl-Font-AFM
-BuildRequires:	perl-HTML-Tree >= 0.62
 BuildRequires:	perl >= 5.6
 # do not change to BuildRequires
 Requires:	perl-HTML-Tree >= 0.62
