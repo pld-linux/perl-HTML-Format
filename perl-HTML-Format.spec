@@ -1,11 +1,10 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	HTML
 %define	pnam	Format
-Summary:	HTML::Format perl module
-Summary(pl):	Modu³ perla HTML::Format
+Summary:	HTML::Formatter - Base class for HTML formatters
 Name:		perl-HTML-Format
 Version:	1.23
-Release:	7
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -19,10 +18,11 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-HTML::Format perl module.
-
-%description -l pl
-Modu³ perla HTML::Format.
+HTML formatters are able to format a HTML syntax tree into various
+printable formats.  Different formatters produce output for different
+output media.  Common for all formatters are that they will return the
+formatted output when the format() method is called.  Format() takes a
+HTML::Element as parameter.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
