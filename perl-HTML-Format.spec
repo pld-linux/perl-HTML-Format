@@ -2,7 +2,7 @@
 Summary:	HTML-Format perl module
 Summary(pl):	Modu³ perla HTML-Format
 Name:		perl-HTML-Format
-Version:	1.22
+Version:	1.23
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
@@ -36,7 +36,7 @@ rm -rf $RPM_BUILD_ROOT
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/HTML-Format
   sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
+  mv -f .packlist.new .packlist
 )
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
