@@ -13,7 +13,7 @@ BuildRequires:	perl >= 5.6
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 Requires:	perl-Font-AFM
 # do not change to BuildRequires
-Requires:	perl-HTML-Tree >= 0.62
+Requires:	perl-HTML-Tree >= 3.15
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
