@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	HTML
 %define	pnam	Format
-%include	/usr/lib/rpm/macros.perl
 Summary:	HTML-Format perl module
 Summary(pl):	Modu³ perla HTML-Format
 Name:		perl-HTML-Format
 Version:	1.23
-Release:	5
-
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -26,7 +25,7 @@ HTML-Format perl module.
 Modu³ perla HTML-Format.
 
 %prep
-%setup -q -n HTML-Format-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
