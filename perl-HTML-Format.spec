@@ -5,7 +5,7 @@ Summary:	HTML::Formatter - Base class for HTML formatters
 Summary(pl):	HTML::Formatter - bazowa klasa dla klas formatuj±cych HTML
 Name:		perl-HTML-Format
 Version:	2.03
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -16,6 +16,8 @@ Requires:	perl-Font-AFM
 Requires:	perl-HTML-Tree >= 3.15
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_noautoreqdep	'perl(UNIVERSAL)'
 
 %description
 HTML formatters are able to format a HTML syntax tree into various
