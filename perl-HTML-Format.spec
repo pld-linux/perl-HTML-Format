@@ -16,8 +16,10 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	2d287392b77c959f06397371116c2d7e
 BuildRequires:	perl-devel >= 1:5.8.0
-BuildRequires:	perl-HTML-Element-Extended
 BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with tests}
+BuildRequires:	perl-HTML-Element-Extended
+%endif
 Requires:	perl-Font-AFM
 # do not change to BuildRequires
 Requires:	perl-HTML-Tree >= 3.15
