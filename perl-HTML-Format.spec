@@ -6,7 +6,7 @@
 %define		pdir	HTML
 %define		pnam	Format
 Summary:	HTML::Formatter - base class for HTML formatters
-Summary(pl):	HTML::Formatter - bazowa klasa dla klas formatuj±cych HTML
+Summary(pl.UTF-8):   HTML::Formatter - bazowa klasa dla klas formatujÄ…cych HTML
 Name:		perl-HTML-Format
 Version:	2.04
 Release:	1
@@ -35,11 +35,11 @@ output media.  Common for all formatters are that they will return the
 formatted output when the format() method is called.  Format() takes a
 HTML::Element as parameter.
 
-%description -l pl
-Klasy formatuj±ce HTML mog± sformatowaæ drzewo sk³adni HTML do ró¿nych
-drukowalnych formatów. Ró¿ne klasy formatuj±ce daj± wyj¶cie dla
-ró¿nych mediów. Wspólne dla wszystkich klas formatuj±cych jest to, ¿e
-zwracaj± sformatowane wyj¶cie po wywo³aniu metody format(). format()
+%description -l pl.UTF-8
+Klasy formatujÄ…ce HTML mogÄ… sformatowaÄ‡ drzewo skÅ‚adni HTML do rÃ³Å¼nych
+drukowalnych formatÃ³w. RÃ³Å¼ne klasy formatujÄ…ce dajÄ… wyjÅ›cie dla
+rÃ³Å¼nych mediÃ³w. WspÃ³lne dla wszystkich klas formatujÄ…cych jest to, Å¼e
+zwracajÄ… sformatowane wyjÅ›cie po wywoÅ‚aniu metody format(). format()
 przyjmuje HTML::Element jako parametr.
 
 %prep
