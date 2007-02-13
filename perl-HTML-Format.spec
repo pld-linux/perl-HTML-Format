@@ -6,7 +6,7 @@
 %define		pdir	HTML
 %define		pnam	Format
 Summary:	HTML::Formatter - base class for HTML formatters
-Summary(pl.UTF-8):   HTML::Formatter - bazowa klasa dla klas formatujących HTML
+Summary(pl.UTF-8):	HTML::Formatter - bazowa klasa dla klas formatujących HTML
 Name:		perl-HTML-Format
 Version:	2.04
 Release:	1
