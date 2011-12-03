@@ -13,17 +13,20 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/HTML/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	34831ec506eaa8a7ad5da698224cf58d
-BuildRequires:	perl-Test-Simple >= 0.96
+URL:		http://search.cpan.org/dist/HTML-Format/
+BuildRequires:	perl-Module-Build >= 0.3601
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
+BuildRequires:	perl-File-Slurp
 BuildRequires:	perl-Font-AFM
 BuildRequires:	perl-HTML-Element-Extended
+BuildRequires:	perl-HTML-Tree >= 3.15
+BuildRequires:	perl-Test-Simple >= 0.96
 %endif
 Requires:	perl-Font-AFM
-# do not change to BuildRequires
 Requires:	perl-HTML-Tree >= 3.15
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -66,5 +69,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_vendorlib}/HTML/*.pm
-%{_mandir}/man3/*
+%{perl_vendorlib}/HTML/Format*.pm
+%{_mandir}/man3/HTML::Format*.3pm*
